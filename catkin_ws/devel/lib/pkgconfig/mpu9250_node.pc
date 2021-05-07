@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: mpu9250_node
+Description: Description of mpu9250_node
+Version: 1.0.0
+Cflags: -I/home/ubuntu/catkin_ws/src/ros-mpu9250-node-master/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs std_srvs
