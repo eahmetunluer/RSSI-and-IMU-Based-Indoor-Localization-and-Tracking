@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/install
-
-Name: ble_scanner
-Description: Description of ble_scanner
-Version: 0.0.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime roscpp rospy sensor_msgs std_msgs tf

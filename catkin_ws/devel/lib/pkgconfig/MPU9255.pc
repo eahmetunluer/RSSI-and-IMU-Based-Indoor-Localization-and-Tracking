@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/devel
-
-Name: MPU9255
-Description: Description of MPU9255
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

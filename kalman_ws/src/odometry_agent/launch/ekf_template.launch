@@ -1,0 +1,24 @@
+<launch>
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se" clear_params="true">
+    <rosparam command="load" file="$(find odometry_agent)/param/ekf_template.yaml" />
+
+   <!--  Placeholder for output topic remapping
+    <remap from="odometry/filtered" to=""/>
+    <remap from="accel/filtered" to=""/>
+    -->
+    
+  </node>
+  <node pkg="tf" type="static_transform_publisher" name="beacon6_to_odom"
+          args="-6.6 -3.4 0.0 0.0 0.0 0.0 /odom /beacon4 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="beacon5_to_odom"
+          args="-3.8 -4.4 0.0 0.0 0.0 0.0 /odom /beacon5 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="beacon4_to_odom"
+          args="-0.51 1.93 0.0 0.0 0.0 0.0 /odom /beacon6 10"/>
+          
+    <node pkg="tf" type="static_transform_publisher" name="beacon3_to_odom"
+          args="0.98 -1.26 0.0 0.0 0.0 0.0 /odom /beacon3 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="beacon2_to_odom"
+          args="-2.4 -2.13 0.0 0.0 0.0 0.0 /odom /beacon2 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="beacon1_to_odom"
+          args="2.56 1.034 0.0 0.0 0.0 0.0 /odom /beacon1 10"/>
+</launch>
