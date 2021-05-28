@@ -1,0 +1,2 @@
+ble_scanner
+-DCATKIN_DEVEL_PREFIX=/home/crownco/Museum-Audio-Guide-and-Visitor-Monitoring-System/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/crownco/Museum-Audio-Guide-and-Visitor-Monitoring-System/catkin_ws/install -G Unix Makefiles
